@@ -1,8 +1,0 @@
-{
-    "name": "Weibo",
-    "id": "sina-weibo",
-    "description": "新浪微博快捷方式",
-    "icon": "/images/icons/weibo.svg",
-    "type": "link",
-    "data": "https://weibo.com"
-  }

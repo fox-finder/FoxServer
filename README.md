@@ -1,2 +1,5 @@
-# cloud-store-packages
-Packages for @fox-finder cloud store
+
+# FoxServer
+
+Server for FoxFinder powered by ssh2 and @nestjs
+
