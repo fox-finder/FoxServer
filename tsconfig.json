@@ -16,8 +16,8 @@
     "outDir": "./dist",
     "baseUrl": "./src",
     "paths": {
-      "@server": ["./"],
-      "@server/*": ["./*"]
+      "@fox-finder/base": ["../../FoxBase"],
+      "@fox-finder/node-fs-provider": ["../../node-fs-provider"]
     }
   },
   "typeAcquisition": {
