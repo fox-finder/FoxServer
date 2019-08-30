@@ -1,7 +1,7 @@
 {
-  "name": "FoxFinderServer",
+  "name": "fox-server",
   "version": "0.1.0",
-  "description": "Server for @fox-finder",
+  "description": "Server example for @fox-finder",
   "main": "dist/index.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon",
@@ -10,18 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fox-finder/FoxBase.git"
+    "url": "git+https://github.com/fox-finder/FoxServer.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fox-finder/FoxBase/issues"
+    "url": "https://github.com/fox-finder/FoxServer/issues"
   },
-  "homepage": "https://github.com/fox-finder/FoxBase#readme",
+  "homepage": "https://github.com/fox-finder/FoxServer#readme",
   "dependencies": {
-    "@types/koa": "^2.0.49",
     "express": "^4.17.1",
-    "koa": "^2.8.1",
     "typescript": "^3.5.3",
     "unix-permissions": "^1.2.0"
   },
