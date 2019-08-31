@@ -1,11 +1,12 @@
 
 import { FoxFileProvider } from '@fox-finder/base';
 import { NodeFsProvider } from '@fox-finder/node-fs-provider';
+import { SFTPProvider } from '@fox-finder/sftp-provider';
 import { ResourceType, getResource } from '../resource';
 
 const ProviderFactory = {
   [ResourceType.Local]: NodeFsProvider,
-  // [ResourceType.SSH]: SSHFileProvider,
+  [ResourceType.SSH]: SFTPProvider,
 };
 
 interface IFileProviderMapItem {

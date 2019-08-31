@@ -17,7 +17,8 @@
     "baseUrl": "./src",
     "paths": {
       "@fox-finder/base": ["../../FoxBase"],
-      "@fox-finder/node-fs-provider": ["../../node-fs-provider"]
+      "@fox-finder/node-fs-provider": ["../../node-fs-provider"],
+      "@fox-finder/sftp-provider": ["../../sftp-provider"]
     }
   },
   "typeAcquisition": {

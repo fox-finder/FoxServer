@@ -6,8 +6,8 @@ import { ensureProvider, normalizeResponse } from './file.utils';
 export const fileRouter = express.Router();
 
 fileRouter.get('/list', (req, res) => {
-  const { header, query } = req;
-  const resourceId = header['resource-id'];
+  const { headers, query } = req;
+  const resourceId = headers['resource-id'] as string;
   normalizeResponse(res)(
     ensureProvider(resourceId).then(
       (provider: FoxFileProvider) => provider.listFile(query.path, query.keyword),
@@ -15,8 +15,14 @@ fileRouter.get('/list', (req, res) => {
   );
 });
 
-fileRouter.get('/one', (req, res) => {
-  res.send('one');
+fileRouter.get('/stat', (req, res) => {
+  const { headers, query } = req;
+  const resourceId = headers['resource-id'] as string;
+  normalizeResponse(res)(
+    ensureProvider(resourceId).then(
+      (provider: FoxFileProvider) => provider.stat(query.path),
+    ),
+  );
 });
 
 fileRouter.get('/second', (req, res) => {
