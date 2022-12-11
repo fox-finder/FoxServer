@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/fox-finder/FoxServer#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "typescript": "^3.5.3",
     "unix-permissions": "^1.2.0"
   },
